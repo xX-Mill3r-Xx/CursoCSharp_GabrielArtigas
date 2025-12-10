@@ -1,2 +1,6 @@
-# CursoCSharp_GabrielArtigas
-Aprenda C#.NET do Zero ao Avançado na prática com projetos e exerícios utilizando os principais recursos da linguagem.
+# Curso CSharp Completo e Profissional
+
+### Professor Gabriel Artigas
+
+
+Repositorio dedicado aos meus estudos sobre a linguagem. Curso de programação.
