@@ -2,7 +2,7 @@
 
 namespace Heranca
 {
-    public class Bicicleta : Veiculo
+    public sealed class Bicicleta : Veiculo
     {
         #region Properties
 
