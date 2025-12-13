@@ -3,6 +3,9 @@
 > Repositório de estudos baseado no curso *C# Completo e Profissional* do professor **Gabriel Artigas**.
 > Contém exemplos e exercícios em C# para aprendizado prático da linguagem.
 
+![Certificado](Images/certificado.jpg)
+
+
 ## 🧠 Sobre o Projeto
 
 Este repositório reúne diversos exercícios e projetos feitos durante o estudo da linguagem **C# (.NET)**, abordando desde conceitos básicos até tópicos mais avançados como orientação a objetos e polimorfismo.
