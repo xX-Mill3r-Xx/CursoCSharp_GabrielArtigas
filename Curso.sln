@@ -43,6 +43,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Teste", "Teste\Teste.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PropiedadesDasForms", "PropiedadesDasForms\PropiedadesDasForms.csproj", "{E4CB39C8-B5C1-4EDE-B519-7DCE718987A5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaCadastro", "SistemaCadastro\SistemaCadastro.csproj", "{BB182113-C5B3-4EE5-8C7A-A5682BF341CE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -117,6 +119,10 @@ Global
 		{E4CB39C8-B5C1-4EDE-B519-7DCE718987A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E4CB39C8-B5C1-4EDE-B519-7DCE718987A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E4CB39C8-B5C1-4EDE-B519-7DCE718987A5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BB182113-C5B3-4EE5-8C7A-A5682BF341CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BB182113-C5B3-4EE5-8C7A-A5682BF341CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BB182113-C5B3-4EE5-8C7A-A5682BF341CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BB182113-C5B3-4EE5-8C7A-A5682BF341CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -139,6 +145,7 @@ Global
 		{C2FE5000-4A87-4FBB-8DBC-78F46A99D6FB} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 		{435F4376-7E2B-4C85-A90F-49CDB7DDE9FF} = {7BBAFB2A-3DC5-41BF-9CBC-36F57B3B8E93}
 		{E4CB39C8-B5C1-4EDE-B519-7DCE718987A5} = {7BBAFB2A-3DC5-41BF-9CBC-36F57B3B8E93}
+		{BB182113-C5B3-4EE5-8C7A-A5682BF341CE} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9E1BB0-F338-4DAE-856C-4CDF1F6EDB48}
