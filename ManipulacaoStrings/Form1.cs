@@ -12,9 +12,11 @@ namespace ManipulacaoStrings
 
         private void btnExecutar_Click(object sender, EventArgs e)
         {
-            string texto = " Este tipo de variável é alfanumérica";
+            string texto = " - Este tipo de variável é alfanumérica - ";
             string nome = "Martins";
             int numero = 5400;
+            decimal valor = 1540.45M;
+            DateTime data = DateTime.Now;
 
             #region Métodos para teste
 
@@ -29,6 +31,15 @@ namespace ManipulacaoStrings
             //Tamanho(nome);
             //SubString(nome);
             //ComandoSplit(texto);
+            //StartWith(nome);
+            //EndsWith(nome);
+            //Trim(texto);
+            //TrimStart(texto);
+            //TrimEnd(texto);
+            //Equals(nome);
+            //CompareTo(nome);
+            //Format(valor);
+            Format(data);
 
             #endregion
         }
@@ -104,6 +115,69 @@ namespace ManipulacaoStrings
             {
                 lbTeste.Text += item + "\n";
             }
+        }
+
+        private void StartWith(string nome)
+        {
+            if(nome.StartsWith("M", StringComparison.OrdinalIgnoreCase))
+                lbTeste.Text = "Começa com M";
+            else
+                lbTeste.Text = "Não começa com M";
+        }
+
+        private void EndsWith(string nome)
+        {
+            if(nome.EndsWith("b", StringComparison.OrdinalIgnoreCase))
+                lbTeste.Text = "Termina com b";
+            else
+                lbTeste.Text = "Não termina com b";
+        }
+
+        private void Trim(string texto)
+        {
+            char[] c = new char[] { ' ', '-', '/' };
+            string nova = texto.Trim(c);
+            lbTeste.Text = nova;
+        }
+
+        private void TrimStart(string texto)
+        {
+            char[] c = new char[] { ' ', '-', '/' };
+            string nova = texto.TrimStart(c);
+            lbTeste.Text = nova;
+        }
+
+        private void TrimEnd(string texto)
+        {
+            char[] c = new char[] { ' ', '-', '/' };
+            string nova = texto.TrimEnd(c);
+            lbTeste.Text = nova;
+        }
+
+        private void Equals(string nome)
+        {
+            if(nome.Equals("Teste"))
+                lbTeste.Text = "Igual";
+            else
+                lbTeste.Text = "Diferente";
+        }
+
+        private void CompareTo(string nome)
+        {
+            if(nome.CompareTo("Martins") == 0)
+                lbTeste.Text = "Igual";
+            else
+                lbTeste.Text = "Diferente";
+        }
+
+        private void Format(decimal valor)
+        {
+            lbTeste.Text = string.Format("O valor do produto é {0:C2}", valor);
+        }
+
+        private void Format(DateTime data)
+        {
+            lbTeste.Text = string.Format("A data é: {0:dd/MM/yyy} e são {0:HH:mm:ss}", data);
         }
 
         #endregion
