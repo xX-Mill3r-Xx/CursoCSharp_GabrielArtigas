@@ -13,8 +13,25 @@ namespace SistemaLogin
 
         private void FrmPrincipal_Load(object sender, EventArgs e)
         {
+            MostrarLogin();
+        }
+
+        private void MostrarLogin()
+        {
             FrmLogin login = new FrmLogin();
-            login.ShowDialog();
+            DialogResult result = login.ShowDialog();
+
+            if (result == DialogResult.Retry)
+            {
+                Hide();
+
+                FrmLogin novoLogin = new FrmLogin();
+                novoLogin.ShowDialog();
+            }
+            else if(result == DialogResult.Cancel)
+            {
+                Application.Exit();
+            }
         }
     }
 }
