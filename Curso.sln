@@ -49,6 +49,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipulacaoStrings", "Manip
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaLogin", "SistemaLogin\SistemaLogin.csproj", "{C6A4A857-244A-4262-AF76-AA36C66CB542}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManipularNumeros", "ManipularNumeros\ManipularNumeros.csproj", "{A936FD8E-0706-4DA1-A550-FB486C02FDF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -135,6 +137,10 @@ Global
 		{C6A4A857-244A-4262-AF76-AA36C66CB542}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C6A4A857-244A-4262-AF76-AA36C66CB542}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C6A4A857-244A-4262-AF76-AA36C66CB542}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A936FD8E-0706-4DA1-A550-FB486C02FDF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A936FD8E-0706-4DA1-A550-FB486C02FDF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A936FD8E-0706-4DA1-A550-FB486C02FDF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A936FD8E-0706-4DA1-A550-FB486C02FDF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -160,6 +166,7 @@ Global
 		{BB182113-C5B3-4EE5-8C7A-A5682BF341CE} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 		{2E3A2098-98D7-48FD-B6DE-C8E35649B62F} = {7BBAFB2A-3DC5-41BF-9CBC-36F57B3B8E93}
 		{C6A4A857-244A-4262-AF76-AA36C66CB542} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
+		{A936FD8E-0706-4DA1-A550-FB486C02FDF7} = {7BBAFB2A-3DC5-41BF-9CBC-36F57B3B8E93}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9E1BB0-F338-4DAE-856C-4CDF1F6EDB48}
