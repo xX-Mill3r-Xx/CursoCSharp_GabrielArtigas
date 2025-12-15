@@ -48,6 +48,7 @@ namespace SistemaLogin.UI
             string senha = txtSenha.Text.Trim();
             if (CadastroUsuarios.ValidarUsuario(usuario, senha))
             {
+                DialogResult = DialogResult.Cancel;
                 Close();
             }   
             else
