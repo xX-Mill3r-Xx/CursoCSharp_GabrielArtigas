@@ -30,6 +30,7 @@
         {
             this.lista = new System.Windows.Forms.ListBox();
             this.btnList = new System.Windows.Forms.Button();
+            this.btnHashSet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -59,11 +60,30 @@
             this.btnList.UseVisualStyleBackColor = false;
             this.btnList.Click += new System.EventHandler(this.btnList_Click);
             // 
+            // btnHashSet
+            // 
+            this.btnHashSet.BackColor = System.Drawing.Color.Navy;
+            this.btnHashSet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHashSet.FlatAppearance.BorderSize = 0;
+            this.btnHashSet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnHashSet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnHashSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnHashSet.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHashSet.ForeColor = System.Drawing.Color.White;
+            this.btnHashSet.Location = new System.Drawing.Point(476, 41);
+            this.btnHashSet.Name = "btnHashSet";
+            this.btnHashSet.Size = new System.Drawing.Size(151, 23);
+            this.btnHashSet.TabIndex = 2;
+            this.btnHashSet.Text = "HashSet";
+            this.btnHashSet.UseVisualStyleBackColor = false;
+            this.btnHashSet.Click += new System.EventHandler(this.btnHashSet_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 519);
+            this.Controls.Add(this.btnHashSet);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.lista);
             this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -80,6 +100,7 @@
 
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Button btnList;
+        private System.Windows.Forms.Button btnHashSet;
     }
 }
 

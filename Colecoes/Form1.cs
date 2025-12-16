@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Windows.Forms;
 
 namespace Colecoes
@@ -13,6 +14,8 @@ namespace Colecoes
 
         private void btnList_Click(object sender, EventArgs e)
         {
+            lista.Items.Clear(); // sempre limpa o listbox antes de exibir os elementos
+
             #region exemplo de um array
 
             //Array - Tipo Primitivo
@@ -62,6 +65,60 @@ namespace Colecoes
 
             #endregion
 
+            #region removendo elementos da lista
+
+            //if (nomesLista.Remove("Lucas"))
+            //    MessageBox.Show("Lucas removido", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //else
+            //    MessageBox.Show("não foi possivel remover", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            #endregion
+
+            #region metodo Contains()
+
+            //if(nomesLista.Contains("nome 1"))
+            //    MessageBox.Show("Contem o nome 1", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            //else
+            //    MessageBox.Show("não contem o nome 1", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            #endregion
+
+            #region metodo Count()
+
+            //MessageBox.Show($"Numero de elementos desta lista: {nomesLista.Count}");
+
+            #endregion
+
+            #region metodo Sort
+
+            //nomesLista.Sort(); // organiza em ordem alfabetica
+
+            #endregion
+
+            #region para saber o indice de um elemento da lista
+
+            //MessageBox.Show($"Lucas está no indice: {nomesLista.IndexOf("Lucas")}");
+
+            #endregion
+
+            #region metodo Insert
+
+            nomesLista.Insert(2, "Miller");
+
+            #endregion
+
+            #region metodo RemoveAt()
+
+            nomesLista.RemoveAt(3);
+
+            #endregion
+
+            #region metodo Clear()
+
+            //nomesLista.Clear();
+
+            #endregion
+
             #region usando um foreach para percorrer a lista e add os elementos
 
             foreach (string nome in nomesLista)
@@ -70,6 +127,88 @@ namespace Colecoes
             }
 
             #endregion
+        }
+
+        private void btnHashSet_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instanciar listas do tipo hashSet
+
+            // obs, listas do tipo hashSet não aceitam elementos repetidos
+
+            HashSet<string> veiculos = new HashSet<string>
+            {
+                "Carros",
+                "Motos",
+                "Avião"
+            };
+
+            if (veiculos.Add("Cavalo"))
+                MessageBox.Show("Cavalo adicionado", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Não foi possivel adicionar", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+            #endregion
+
+            #region metodo Contais()
+
+            if (veiculos.Contains("Carros"))
+                MessageBox.Show("Contem Carros");
+            else
+                MessageBox.Show("Não Contem");
+
+            #endregion
+
+            #region metodo Remove()
+
+            if (veiculos.Remove("Carros"))
+                MessageBox.Show("Carros Removido");
+            else
+                MessageBox.Show("Não Removido");
+
+            #endregion
+
+            #region propiedade Count
+
+            int num = veiculos.Count;
+
+            MessageBox.Show($"Elementos nesta lista: {num}");
+
+            #endregion
+
+            #region metodo Clear()
+
+            //veiculos.Clear();
+
+            #endregion
+
+            #region para acessar um elemento da lista
+
+            MessageBox.Show(veiculos.ElementAt(1));
+
+            #endregion
+
+            #region metodo First()
+
+            MessageBox.Show($"O primeiro elemento é: {veiculos.First()}");
+
+            #endregion
+
+            #region metodo Last()
+
+            MessageBox.Show($"O ultimo elemento é: {veiculos.Last()}");
+            #endregion
+
+            #region percorrer e add os elementos a lista
+
+            foreach (string veiculo in veiculos)
+                {
+                    lista.Items.Add(veiculo);
+                }
+
+            #endregion
+
         }
     }
 }
