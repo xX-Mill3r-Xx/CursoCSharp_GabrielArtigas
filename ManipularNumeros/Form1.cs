@@ -16,7 +16,8 @@ namespace ManipularNumeros
             //MetodoToString();
             //ConverterHexaDecimal();
             //ConverterFormatoMonetarios();
-            ConverterToString();
+            //ConverterToString();
+            ClasseMath();
         }
 
         private void MetodoTryParse()
@@ -55,6 +56,20 @@ namespace ManipularNumeros
         {
             int num = 10;
             lbResultado.Text = Convert.ToString(num, 16);
+        }
+
+        private void ClasseMath()
+        {
+            //lbResultado.Text = Math.PI.ToString("#.00");
+            //lbResultado.Text = Math.Cos(3).ToString("#.00");
+            //lbResultado.Text = Math.Sin(3).ToString("#.00");
+            //lbResultado.Text = Math.E.ToString("#.00");
+            //lbResultado.Text = Math.Pow(2,2).ToString("#.00");
+            //lbResultado.Text = Math.Sqrt(49).ToString("#.00");
+            //lbResultado.Text = Math.Round(158.75).ToString("#.00");
+            //lbResultado.Text = Math.Truncate(32.57).ToString("#.00");
+            //lbResultado.Text = Math.Floor(3.5).ToString("#.00");
+            lbResultado.Text = Math.Ceiling(52.25).ToString("#.00");
         }
     }
 }
