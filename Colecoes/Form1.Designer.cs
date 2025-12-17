@@ -31,6 +31,7 @@
             this.lista = new System.Windows.Forms.ListBox();
             this.btnList = new System.Windows.Forms.Button();
             this.btnHashSet = new System.Windows.Forms.Button();
+            this.btnDictionary = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -78,11 +79,30 @@
             this.btnHashSet.UseVisualStyleBackColor = false;
             this.btnHashSet.Click += new System.EventHandler(this.btnHashSet_Click);
             // 
+            // btnDictionary
+            // 
+            this.btnDictionary.BackColor = System.Drawing.Color.Navy;
+            this.btnDictionary.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnDictionary.FlatAppearance.BorderSize = 0;
+            this.btnDictionary.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnDictionary.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnDictionary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnDictionary.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDictionary.ForeColor = System.Drawing.Color.White;
+            this.btnDictionary.Location = new System.Drawing.Point(476, 70);
+            this.btnDictionary.Name = "btnDictionary";
+            this.btnDictionary.Size = new System.Drawing.Size(151, 23);
+            this.btnDictionary.TabIndex = 3;
+            this.btnDictionary.Text = "Dictionary";
+            this.btnDictionary.UseVisualStyleBackColor = false;
+            this.btnDictionary.Click += new System.EventHandler(this.btnDictionary_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 519);
+            this.Controls.Add(this.btnDictionary);
             this.Controls.Add(this.btnHashSet);
             this.Controls.Add(this.btnList);
             this.Controls.Add(this.lista);
@@ -101,6 +121,7 @@
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.Button btnList;
         private System.Windows.Forms.Button btnHashSet;
+        private System.Windows.Forms.Button btnDictionary;
     }
 }
 

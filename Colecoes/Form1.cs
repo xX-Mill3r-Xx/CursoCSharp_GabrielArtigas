@@ -203,12 +203,57 @@ namespace Colecoes
             #region percorrer e add os elementos a lista
 
             foreach (string veiculo in veiculos)
-                {
-                    lista.Items.Add(veiculo);
-                }
+            {
+                lista.Items.Add(veiculo);
+            }
 
             #endregion
 
+        }
+
+        private void btnDictionary_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instanciar uma lista do tipo Dictionary
+
+            Dictionary<int, string> alunos = new Dictionary<int, string>
+            {
+                { 150, "Danny" },
+                { 200, "Artur" },
+                { 80, "Gabriel" }
+            };
+
+            #endregion
+
+            #region add valores a uma lista dictionary
+
+            alunos.Add(100, "Miller");
+
+            #endregion
+
+            #region metodos e propiedades das dictionary
+
+            lista.Items.Add($"Quantidade total de alunos: {alunos.Count}");
+            lista.Items.Add("-------------------------------------------");
+            //alunos.Remove(100);
+            //alunos.Clear();
+            //alunos.ContainsKey(100);
+            //alunos.ContainsValue("Gabriel");
+            //alunos.First();
+            //alunos.Last();
+
+            #endregion
+
+            #region percorrer uma dictionary
+
+            foreach (KeyValuePair<int, string> item in alunos)
+            {
+                lista.Items.Add($"Chave: {item.Key} - Aluno: {item.Value}");
+                lista.Items.Add("-------------------------------------------");
+            }
+
+            #endregion
         }
     }
 }
