@@ -296,5 +296,46 @@ namespace Colecoes
 
             #endregion
         }
+
+        private void btnSortedDictionary_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instanciar uma sorted dictionary
+
+            SortedDictionary<int, string> alunos = new SortedDictionary<int, string>
+            {
+                { 01, "Miller" },
+                { 02, "Mateus" },
+                { 03, "Juninho" }
+            };
+
+            #endregion
+
+            #region add um elemneto
+
+            alunos.Add(04, "Selma");
+
+            #endregion
+
+            #region metodos e atributos da sorted dictionary
+
+            lista.Items.Add($"quantidade de alunos: {alunos.Count}"); // conta a quantidade de registros
+            lista.Items.Add($"aluno no indice 01: {alunos.ElementAt(0)}"); // retorna o elemento contido no indice indicado
+            //alunos.Remove(01); // remove com base na chave
+            //alunos.ContainsKey(01); // check se contem a chave indicada - retorna bool
+            //alunos.ContainsValue("Miller"); // check se contem o valor indicado - retona bool
+
+            #endregion
+
+            #region percorrer a lista
+
+            foreach (var aluno in alunos) // para adicionar na ordem reversa, .Reverse() na coleção alunos
+            {
+                lista.Items.Add($"{aluno.Key} - {aluno.Value}");
+            }
+
+            #endregion
+        }
     }
 }
