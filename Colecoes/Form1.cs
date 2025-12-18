@@ -379,5 +379,44 @@ namespace Colecoes
 
             #endregion
         }
+
+        private void btnQueue_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instanciar uma queue
+
+            Queue<string> fila = new Queue<string>();
+
+            #endregion
+
+            #region add elementos
+
+            fila.Enqueue("01");
+            fila.Enqueue("02");
+            fila.Enqueue("03");
+
+            #endregion
+
+            #region métodos e atributos da lista
+
+            lista.Items.Add($"elementod na fila: {fila.Count}");
+            lista.Items.Add($"retornando elemento com o metodo Peek(): {fila.Peek()}");
+            lista.Items.Add($"retornando elemento com o metodo DeQueue(): {fila.Dequeue()}"); // essse método remove o elemento da fila
+            //fila.First();
+            //fila.Last();
+            //fila.Clear();
+
+            #endregion
+
+            #region percorrer a lista
+
+            foreach (var item in fila)
+            {
+                lista.Items.Add(item);
+            }
+
+            #endregion
+        }
     }
 }

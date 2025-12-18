@@ -35,6 +35,7 @@
             this.btnSortedList = new System.Windows.Forms.Button();
             this.btnSortedDictionary = new System.Windows.Forms.Button();
             this.btnSortedSet = new System.Windows.Forms.Button();
+            this.btnQueue = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -154,11 +155,30 @@
             this.btnSortedSet.UseVisualStyleBackColor = false;
             this.btnSortedSet.Click += new System.EventHandler(this.btnSortedSet_Click);
             // 
+            // btnQueue
+            // 
+            this.btnQueue.BackColor = System.Drawing.Color.Navy;
+            this.btnQueue.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnQueue.FlatAppearance.BorderSize = 0;
+            this.btnQueue.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnQueue.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnQueue.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnQueue.ForeColor = System.Drawing.Color.White;
+            this.btnQueue.Location = new System.Drawing.Point(476, 186);
+            this.btnQueue.Name = "btnQueue";
+            this.btnQueue.Size = new System.Drawing.Size(151, 23);
+            this.btnQueue.TabIndex = 7;
+            this.btnQueue.Text = "Queue";
+            this.btnQueue.UseVisualStyleBackColor = false;
+            this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 519);
+            this.Controls.Add(this.btnQueue);
             this.Controls.Add(this.btnSortedSet);
             this.Controls.Add(this.btnSortedDictionary);
             this.Controls.Add(this.btnSortedList);
@@ -185,6 +205,7 @@
         private System.Windows.Forms.Button btnSortedList;
         private System.Windows.Forms.Button btnSortedDictionary;
         private System.Windows.Forms.Button btnSortedSet;
+        private System.Windows.Forms.Button btnQueue;
     }
 }
 
