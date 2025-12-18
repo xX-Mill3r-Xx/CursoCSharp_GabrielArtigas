@@ -1,91 +1,82 @@
-# 📘 Curso C# Completo e Profissional
+# Curso C# Completo e Profissional  
+### Professor Gabriel Artigas
 
-> Repositório de estudos baseado no curso *C# Completo e Profissional* do professor **Gabriel Artigas**.
-> Contém exemplos e exercícios em C# para aprendizado prático da linguagem.
+Bem-vindo ao meu repositório onde estou registrando todos os meus estudos e exercícios do curso de **C# (.NET)** ministrado pelo *Professor Gabriel Artigas*.
 
-
-## 🧠 Sobre o Projeto
-
-Este repositório reúne diversos exercícios e projetos feitos durante o estudo da linguagem **C# (.NET)**, abordando desde conceitos básicos até tópicos mais avançados como orientação a objetos e polimorfismo.
-
-O conteúdo é organizado em pastas que representam diferentes temas, como:
-
-* 🧱 Classes e Objetos
-* 🔐 Encapsulamento
-* 🔁 Recursividade
-* ⭐ Testes e Utilitários
-* E outros fundamentos essenciais da linguagem C#
-
-O objetivo é **fixar conceitos e construir um portfólio de código** enquanto você aprende C#. ([GitHub][1])
+Nesta coleção você encontrará vários projetos e exemplos práticos que acompanham o aprendizado da linguagem.
 
 ---
 
-## 📂 Estrutura do Repositório
+## 📁 Estrutura do Repositório
 
-Cada pasta representa um módulo ou conceito:
+Aqui estão as pastas que representam os módulos e exercícios já concluídos:
 
-```
-📦 CursoCSharp_GabrielArtigas
- ┣ 📁 ClassesObjetos
- ┣ 📁 ClassesStaticas
- ┣ 📁 Encapsulamento
- ┣ 📁 Heranca
- ┣ 📁 MetodoMain
- ┣ 📁 MetodoConstrutor
- ┣ 📁 Polimorfismo
- ┣ 📁 Recursividade
- ┣ 📁 TipoDelegate
- ┣ 📁 Teste
- ┗ 📄 Curso.sln
-```
+### 🔹 Conceitos Básicos e POO
+- `ClassesObjetos` – Estudos sobre classes e objetos  
+- `ClassesStaticas` – Uso de classes estáticas  
+- `Encapsulamento` – Encapsulamento de dados e propriedades  
+- `Heranca` – Herança entre classes  
+- `Polimorfismo` – Polimorfismo em C#  
+- `Propiedades` – Propriedades auto-implementadas  
+- `TermoThis` – Uso do `this`
 
-✨ **Dica:** Navegue pelas pastas e explore os projetos para entender cada conceito em prática. ([GitHub][1])
+### 🔹 Estruturas e Lógica
+- `FatorialRecursivo` – Exemplo de recursão com fatorial  
+- `Recursividade` – Outros exemplos de recursão  
+- `MediaGeralPOO` – Cálculo de médias em POO  
+- `MetodoConstrutor` – Construtores de classe  
+- `MetodoMain` – Estrutura principal do programa  
+- `MetodosDasClasses` – Métodos dentro de classes  
+- `Modificadores` – Modificadores de acesso  
+- `TipoDelegate` – Delegates em C#
+
+### 🔹 Testes e Outros
+- `Teste` – Testes diversos de lógica e funcionalidades  
+- `PropiedadesDasForms` – Propriedades usadas em formulários (WinForms)
+
+### 📄 Arquivos importantes
+- `.gitignore` – Arquivos ignorados pelo Git  
+- `.gitattributes` – Atributos do repositório  
+- `Curso.sln` – Solução principal do curso
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 📸 Certificado (Conquistas)
 
-Este projeto utiliza:
+Abaixo está o certificado que eu recebi durante o curso:
 
-* **C# (C Sharp)** — linguagem de programação moderna e versátil.
-* **.NET Framework / .NET Core** — plataforma para desenvolvimento de aplicações.
-  Essas tecnologias permitem criar desde aplicações de console até soluções complexas para desktop e web. ([GitHub Docs][2])
+![Certificado do Curso](Imagens/certificado.jpg)
 
 ---
 
-## 📥 Como Usar
+## 🧠 Sobre o Curso
 
-Para abrir e executar este projeto na sua máquina:
+Este repositório é um **diário de aprendizado em C#**, cobrindo desde os fundamentos da linguagem até conceitos mais avançados com prática constante. A ideia é acompanhar o desenvolvimento dos meus conhecimentos à medida que avanço nas aulas e exercícios.
 
-1. **Clone o repositório**
+---
 
+## 📌 Como Usar
+
+1. Clone o repositório:
    ```bash
    git clone https://github.com/xX-Mill3r-Xx/CursoCSharp_GabrielArtigas.git
-   ```
-2. **Abra a solução (`.sln`) no Visual Studio ou VS Code**
-3. **Compile e execute os projetos desejados**
+````
 
-Caso não tenha o Visual Studio instalado, você pode usar o **Visual Studio Code + .NET SDK** para compilar e rodar os códigos. ([GitHub Docs][2])
-
----
-
-## 💡 Contribuição
-
-Se você quiser contribuir com este repositório, sinta-se à vontade para:
-
-* Adicionar novos exercícios
-* Criar exemplos adicionais
-* Melhorar a organização das pastas
-* Corrigir bugs ou atualizar explicações
-
-Basta criar uma **issue** ou enviar um **pull request** com suas melhorias!
+2. Abra a solução `Curso.sln` no Visual Studio ou outro editor compatível com C#.
+3. Explore cada pasta para ver os respectivos exercícios e exemplos.
 
 ---
 
-## 📝 License
+## ⭐ Contribuições
 
-Este projeto está disponível publicamente para fins de estudo e aprendizado.
-Sinta-se livre para usar e adaptar — basta manter a referência ao autor original.
+Este projeto é pessoal, mas contribuições e sugestões são bem-vindas!
+Sinta-se à vontade para discutir melhorias por meio de *Issues* ou *Pull Requests*.
 
 ---
 
+> Obrigado por visitar meu repositório! 🚀
+> Aprender C# está sendo uma experiência incrível e este espaço representa cada passo dessa jornada.
+
+```
+
+---
