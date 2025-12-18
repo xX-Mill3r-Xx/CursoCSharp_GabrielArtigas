@@ -337,5 +337,47 @@ namespace Colecoes
 
             #endregion
         }
+
+        private void btnSortedSet_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instanciar uma sorted set
+
+            SortedSet<string> nomes = new SortedSet<string>
+            {
+                "Miller",
+                "Mateus",
+                "Juninho"
+            };
+
+            #endregion
+
+            #region add elementos
+
+            nomes.Add("teste");
+
+            #endregion
+
+            #region metodos e atributos da sorted set
+
+            lista.Items.Add($"quantidade de registros: {nomes.Count}");
+            //nomes.ElementAt(1);
+            //nomes.Remove("teste"); // remove o valor passado
+            //nomes.First();
+            //nomes.Last();
+            //nomes.Clear();
+
+            #endregion
+
+            #region percorrer a lista
+
+            foreach (var nome in nomes) // para apresentar a lista de modo reverso: .Reverse()
+            {
+                lista.Items.Add(nome);
+            }
+
+            #endregion
+        }
     }
 }

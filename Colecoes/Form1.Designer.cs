@@ -34,6 +34,7 @@
             this.btnDictionary = new System.Windows.Forms.Button();
             this.btnSortedList = new System.Windows.Forms.Button();
             this.btnSortedDictionary = new System.Windows.Forms.Button();
+            this.btnSortedSet = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -135,11 +136,30 @@
             this.btnSortedDictionary.UseVisualStyleBackColor = false;
             this.btnSortedDictionary.Click += new System.EventHandler(this.btnSortedDictionary_Click);
             // 
+            // btnSortedSet
+            // 
+            this.btnSortedSet.BackColor = System.Drawing.Color.Navy;
+            this.btnSortedSet.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnSortedSet.FlatAppearance.BorderSize = 0;
+            this.btnSortedSet.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnSortedSet.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnSortedSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSortedSet.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSortedSet.ForeColor = System.Drawing.Color.White;
+            this.btnSortedSet.Location = new System.Drawing.Point(476, 157);
+            this.btnSortedSet.Name = "btnSortedSet";
+            this.btnSortedSet.Size = new System.Drawing.Size(151, 23);
+            this.btnSortedSet.TabIndex = 6;
+            this.btnSortedSet.Text = "SortedSet";
+            this.btnSortedSet.UseVisualStyleBackColor = false;
+            this.btnSortedSet.Click += new System.EventHandler(this.btnSortedSet_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(639, 519);
+            this.Controls.Add(this.btnSortedSet);
             this.Controls.Add(this.btnSortedDictionary);
             this.Controls.Add(this.btnSortedList);
             this.Controls.Add(this.btnDictionary);
@@ -164,6 +184,7 @@
         private System.Windows.Forms.Button btnDictionary;
         private System.Windows.Forms.Button btnSortedList;
         private System.Windows.Forms.Button btnSortedDictionary;
+        private System.Windows.Forms.Button btnSortedSet;
     }
 }
 
