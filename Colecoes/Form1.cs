@@ -255,5 +255,46 @@ namespace Colecoes
 
             #endregion
         }
+
+        private void btnSortedList_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instnciar uma sorted list
+
+            SortedList<int, string> alunos = new SortedList<int, string>
+            {
+                { 21, "Miller"},
+                { 15, "Mateus" },
+                { 95, "Juninho" }
+            };
+
+            #endregion
+
+            #region add elementos a sorted list
+
+            alunos.Add(04, "Selma");
+
+            #endregion
+
+            #region metodos e atributos da sorted list
+
+            lista.Items.Add($"Quantidade de alunos: {alunos.Count}"); // conta a quantidade de registros
+            //alunos.Remove(15); // remove um registro com base na chave indicada
+            //alunos.RemoveAt(0); // remove o registro com base no indice
+            //alunos.ContainsKey(50); // indica se contem a chave indicada - retorna um bool
+            //alunos.ContainsValue("Miler"); // indica se contem o valor indicado - retorna um bool
+
+            #endregion
+
+            #region percorrer a lista
+
+            foreach (var aluno in alunos) // para adicionar na ordem reversa usamos .Reverse() na coleção de alunos
+            {
+                lista.Items.Add($"{aluno.Key} - {aluno.Value}");
+            }
+
+            #endregion
+        }
     }
 }
