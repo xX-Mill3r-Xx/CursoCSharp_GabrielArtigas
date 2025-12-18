@@ -418,5 +418,32 @@ namespace Colecoes
 
             #endregion
         }
+
+        private void btnStack_Click(object sender, EventArgs e)
+        {
+            lista.Items.Clear();
+
+            #region criar e instanciar uma pilha
+
+            Stack<string> pilha = new Stack<string>();
+
+            #endregion
+
+            #region add itens na pilha
+
+            pilha.Push("Miller");
+            pilha.Push("Teste");
+
+            #endregion
+
+            #region percorrer a lista
+
+            foreach (var item in pilha)
+            {
+                lista.Items.Add(item);
+            }
+
+            #endregion
+        }
     }
 }

@@ -36,6 +36,7 @@
             this.btnSortedDictionary = new System.Windows.Forms.Button();
             this.btnSortedSet = new System.Windows.Forms.Button();
             this.btnQueue = new System.Windows.Forms.Button();
+            this.btnStack = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -44,7 +45,7 @@
             this.lista.ItemHeight = 15;
             this.lista.Location = new System.Drawing.Point(12, 12);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(458, 499);
+            this.lista.Size = new System.Drawing.Size(301, 229);
             this.lista.TabIndex = 0;
             // 
             // btnList
@@ -57,7 +58,7 @@
             this.btnList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnList.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnList.ForeColor = System.Drawing.Color.White;
-            this.btnList.Location = new System.Drawing.Point(476, 12);
+            this.btnList.Location = new System.Drawing.Point(319, 12);
             this.btnList.Name = "btnList";
             this.btnList.Size = new System.Drawing.Size(151, 23);
             this.btnList.TabIndex = 1;
@@ -75,7 +76,7 @@
             this.btnHashSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnHashSet.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHashSet.ForeColor = System.Drawing.Color.White;
-            this.btnHashSet.Location = new System.Drawing.Point(476, 41);
+            this.btnHashSet.Location = new System.Drawing.Point(319, 41);
             this.btnHashSet.Name = "btnHashSet";
             this.btnHashSet.Size = new System.Drawing.Size(151, 23);
             this.btnHashSet.TabIndex = 2;
@@ -93,7 +94,7 @@
             this.btnDictionary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnDictionary.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnDictionary.ForeColor = System.Drawing.Color.White;
-            this.btnDictionary.Location = new System.Drawing.Point(476, 70);
+            this.btnDictionary.Location = new System.Drawing.Point(319, 70);
             this.btnDictionary.Name = "btnDictionary";
             this.btnDictionary.Size = new System.Drawing.Size(151, 23);
             this.btnDictionary.TabIndex = 3;
@@ -111,7 +112,7 @@
             this.btnSortedList.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSortedList.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSortedList.ForeColor = System.Drawing.Color.White;
-            this.btnSortedList.Location = new System.Drawing.Point(476, 99);
+            this.btnSortedList.Location = new System.Drawing.Point(319, 99);
             this.btnSortedList.Name = "btnSortedList";
             this.btnSortedList.Size = new System.Drawing.Size(151, 23);
             this.btnSortedList.TabIndex = 4;
@@ -129,7 +130,7 @@
             this.btnSortedDictionary.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSortedDictionary.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSortedDictionary.ForeColor = System.Drawing.Color.White;
-            this.btnSortedDictionary.Location = new System.Drawing.Point(476, 128);
+            this.btnSortedDictionary.Location = new System.Drawing.Point(319, 131);
             this.btnSortedDictionary.Name = "btnSortedDictionary";
             this.btnSortedDictionary.Size = new System.Drawing.Size(151, 23);
             this.btnSortedDictionary.TabIndex = 5;
@@ -147,7 +148,7 @@
             this.btnSortedSet.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnSortedSet.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSortedSet.ForeColor = System.Drawing.Color.White;
-            this.btnSortedSet.Location = new System.Drawing.Point(476, 157);
+            this.btnSortedSet.Location = new System.Drawing.Point(319, 160);
             this.btnSortedSet.Name = "btnSortedSet";
             this.btnSortedSet.Size = new System.Drawing.Size(151, 23);
             this.btnSortedSet.TabIndex = 6;
@@ -165,7 +166,7 @@
             this.btnQueue.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnQueue.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQueue.ForeColor = System.Drawing.Color.White;
-            this.btnQueue.Location = new System.Drawing.Point(476, 186);
+            this.btnQueue.Location = new System.Drawing.Point(319, 189);
             this.btnQueue.Name = "btnQueue";
             this.btnQueue.Size = new System.Drawing.Size(151, 23);
             this.btnQueue.TabIndex = 7;
@@ -173,11 +174,30 @@
             this.btnQueue.UseVisualStyleBackColor = false;
             this.btnQueue.Click += new System.EventHandler(this.btnQueue_Click);
             // 
+            // btnStack
+            // 
+            this.btnStack.BackColor = System.Drawing.Color.Navy;
+            this.btnStack.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnStack.FlatAppearance.BorderSize = 0;
+            this.btnStack.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnStack.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnStack.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStack.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnStack.ForeColor = System.Drawing.Color.White;
+            this.btnStack.Location = new System.Drawing.Point(319, 218);
+            this.btnStack.Name = "btnStack";
+            this.btnStack.Size = new System.Drawing.Size(151, 23);
+            this.btnStack.TabIndex = 8;
+            this.btnStack.Text = "Stack";
+            this.btnStack.UseVisualStyleBackColor = false;
+            this.btnStack.Click += new System.EventHandler(this.btnStack_Click);
+            // 
             // FrmPrincipal
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(639, 519);
+            this.ClientSize = new System.Drawing.Size(480, 249);
+            this.Controls.Add(this.btnStack);
             this.Controls.Add(this.btnQueue);
             this.Controls.Add(this.btnSortedSet);
             this.Controls.Add(this.btnSortedDictionary);
@@ -206,6 +226,7 @@
         private System.Windows.Forms.Button btnSortedDictionary;
         private System.Windows.Forms.Button btnSortedSet;
         private System.Windows.Forms.Button btnQueue;
+        private System.Windows.Forms.Button btnStack;
     }
 }
 
