@@ -48,5 +48,16 @@ namespace ClassesImportantes
 
             #endregion
         }
+
+        private void btnRandon_Click(object sender, EventArgs e)
+        {
+            Random randon = new Random(DateTime.Now.Millisecond);
+
+            #region Gerar numeros aleatórios
+
+            lblResultado.Text = $"O numero aleatório gerado foi: {randon.Next(10000)}";
+
+            #endregion
+        }
     }
 }
