@@ -65,6 +65,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ASPNetCore", "ASPNetCore", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HelloWorld", "HelloWorld\HelloWorld.csproj", "{138B248A-0388-4DC6-9D77-EFA476D2CD99}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RazorPagesMovie", "RazorPagesMovie\RazorPagesMovie.csproj", "{78EF84F7-7F7F-46E7-AF53-411DB2845532}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -175,6 +177,10 @@ Global
 		{138B248A-0388-4DC6-9D77-EFA476D2CD99}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{138B248A-0388-4DC6-9D77-EFA476D2CD99}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{138B248A-0388-4DC6-9D77-EFA476D2CD99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{78EF84F7-7F7F-46E7-AF53-411DB2845532}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{78EF84F7-7F7F-46E7-AF53-411DB2845532}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{78EF84F7-7F7F-46E7-AF53-411DB2845532}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{78EF84F7-7F7F-46E7-AF53-411DB2845532}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -206,6 +212,7 @@ Global
 		{C31E40A7-4972-4D77-83EF-D450B96EDBFE} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 		{5944C4F5-FFAF-4E69-8474-D6E868BBD4FA} = {7BBAFB2A-3DC5-41BF-9CBC-36F57B3B8E93}
 		{138B248A-0388-4DC6-9D77-EFA476D2CD99} = {DABAB037-599E-4008-842B-7930568752B5}
+		{78EF84F7-7F7F-46E7-AF53-411DB2845532} = {DABAB037-599E-4008-842B-7930568752B5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9E1BB0-F338-4DAE-856C-4CDF1F6EDB48}
