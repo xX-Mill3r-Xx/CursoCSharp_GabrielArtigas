@@ -53,7 +53,8 @@ namespace RazorPagesMovie.Pages.Movies
             {
                 if (!MovieExists(Movie.Id))
                 {
-                    return NotFound();
+                    //return NotFound();
+                    return RedirectToPage("./Index");
                 }
                 else
                 {
