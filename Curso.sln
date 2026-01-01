@@ -85,6 +85,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalculaIMC", "CalculaIMC\Ca
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstruturasDeControle", "EstruturasDeControle\EstruturasDeControle.csproj", "{D9D824B1-160D-4D9C-94FD-120A3AC69EE0}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Calculadora", "Calculadora\Calculadora.csproj", "{D259B190-6E9D-4484-B7FA-DBBABED22B93}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -235,6 +237,10 @@ Global
 		{D9D824B1-160D-4D9C-94FD-120A3AC69EE0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9D824B1-160D-4D9C-94FD-120A3AC69EE0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9D824B1-160D-4D9C-94FD-120A3AC69EE0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D259B190-6E9D-4484-B7FA-DBBABED22B93}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D259B190-6E9D-4484-B7FA-DBBABED22B93}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D259B190-6E9D-4484-B7FA-DBBABED22B93}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D259B190-6E9D-4484-B7FA-DBBABED22B93}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -276,6 +282,7 @@ Global
 		{157DB940-BEF5-40B0-B2FA-9F49BC3AEC07} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 		{A1B6FA49-60E0-40A2-97FE-2D3D9C68193B} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 		{D9D824B1-160D-4D9C-94FD-120A3AC69EE0} = {551BC1DD-603C-4F03-B1CD-EB8ADA15B66D}
+		{D259B190-6E9D-4484-B7FA-DBBABED22B93} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9E1BB0-F338-4DAE-856C-4CDF1F6EDB48}
