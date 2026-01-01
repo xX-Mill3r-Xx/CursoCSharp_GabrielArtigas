@@ -77,6 +77,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConversorDeTemperaturas", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Colecao", "Colecao\Colecao.csproj", "{5CE40105-6EE0-4291-AE6A-1772C50469E4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EstruturasCondicionais", "EstruturasCondicionais\EstruturasCondicionais.csproj", "{B784BEFD-A4CE-4982-BE14-2219CC1F1EB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -211,6 +213,10 @@ Global
 		{5CE40105-6EE0-4291-AE6A-1772C50469E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CE40105-6EE0-4291-AE6A-1772C50469E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CE40105-6EE0-4291-AE6A-1772C50469E4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B784BEFD-A4CE-4982-BE14-2219CC1F1EB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B784BEFD-A4CE-4982-BE14-2219CC1F1EB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B784BEFD-A4CE-4982-BE14-2219CC1F1EB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B784BEFD-A4CE-4982-BE14-2219CC1F1EB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -248,6 +254,7 @@ Global
 		{CC8AA248-1928-4F6F-90DC-027B8BD8BAA2} = {551BC1DD-603C-4F03-B1CD-EB8ADA15B66D}
 		{D4B9C972-1789-4BC2-8AB8-41918018FD69} = {9E3B75B4-23B4-4BF3-938F-9189E1A90A1A}
 		{5CE40105-6EE0-4291-AE6A-1772C50469E4} = {551BC1DD-603C-4F03-B1CD-EB8ADA15B66D}
+		{B784BEFD-A4CE-4982-BE14-2219CC1F1EB3} = {551BC1DD-603C-4F03-B1CD-EB8ADA15B66D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CC9E1BB0-F338-4DAE-856C-4CDF1F6EDB48}
