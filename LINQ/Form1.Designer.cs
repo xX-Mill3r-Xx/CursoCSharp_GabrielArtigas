@@ -40,15 +40,15 @@
             this.lista.ItemHeight = 32;
             this.lista.Location = new System.Drawing.Point(12, 12);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(490, 548);
+            this.lista.Size = new System.Drawing.Size(611, 548);
             this.lista.TabIndex = 0;
             // 
             // txtConsulta
             // 
             this.txtConsulta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConsulta.Location = new System.Drawing.Point(508, 12);
+            this.txtConsulta.Location = new System.Drawing.Point(629, 487);
             this.txtConsulta.Name = "txtConsulta";
-            this.txtConsulta.Size = new System.Drawing.Size(321, 23);
+            this.txtConsulta.Size = new System.Drawing.Size(200, 23);
             this.txtConsulta.TabIndex = 1;
             // 
             // btnExecutar
@@ -60,12 +60,13 @@
             this.btnExecutar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnExecutar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExecutar.ForeColor = System.Drawing.Color.White;
-            this.btnExecutar.Location = new System.Drawing.Point(508, 41);
+            this.btnExecutar.Location = new System.Drawing.Point(629, 516);
             this.btnExecutar.Name = "btnExecutar";
-            this.btnExecutar.Size = new System.Drawing.Size(321, 44);
+            this.btnExecutar.Size = new System.Drawing.Size(200, 44);
             this.btnExecutar.TabIndex = 2;
             this.btnExecutar.Text = "Executar";
             this.btnExecutar.UseVisualStyleBackColor = false;
+            this.btnExecutar.Click += new System.EventHandler(this.btnExecutar_Click);
             // 
             // Form1
             // 
