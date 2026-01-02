@@ -17,6 +17,8 @@ namespace LINQ
 
         #endregion
 
+        #region Constructors
+
         public Form1()
         {
             InitializeComponent();
@@ -24,16 +26,25 @@ namespace LINQ
             listaNumeros = PopularNumeros();
         }
 
+        #endregion
+
         private void btnExecutar_Click(object sender, EventArgs e)
         {
             try
             {
-                //RetornarNomes();
-                RetornarNumeros();
+                lista.Items.Clear();
+
+                string txt = txtConsulta.Text;
+
+                if (int.TryParse(txt, out int numero))
+                    RetornarNumeros();
+                else
+                    RetornarNomes();
+
             }
             catch (Exception ex)
             {
-                lista.Items.Add(ex.Message);
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -59,7 +70,6 @@ namespace LINQ
 
         private void RetornarNomes()
         {
-            lista.Items.Clear();
             string txt = txtConsulta.Text;
             IEnumerable<string> res = ObterNomes(txt);
             lista.Items.AddRange(res.ToArray());
@@ -87,7 +97,6 @@ namespace LINQ
 
         private void RetornarNumeros()
         {
-            lista.Items.Clear();
             string txt = txtConsulta.Text;
             IEnumerable<int> res = ObterNumeros(txt);
 
@@ -95,6 +104,33 @@ namespace LINQ
             {
                 lista.Items.Add(item);
             }
+        }
+
+        #endregion
+
+        private void btnWhere_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                ClausulaWhere();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #region Clausula Where
+
+        private void ClausulaWhere()
+        {
+            string txt = txtConsulta.Text;
+            var res = from nome in PopularNomes()
+                      where nome.ToLower().Contains(txt)
+                      select nome;
+
+            lista.Items.AddRange(res.ToArray());
         }
 
         #endregion

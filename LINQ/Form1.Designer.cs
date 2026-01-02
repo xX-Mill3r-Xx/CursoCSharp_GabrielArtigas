@@ -31,6 +31,7 @@
             this.lista = new System.Windows.Forms.ListBox();
             this.txtConsulta = new System.Windows.Forms.TextBox();
             this.btnExecutar = new System.Windows.Forms.Button();
+            this.btnWhere = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -46,7 +47,7 @@
             // txtConsulta
             // 
             this.txtConsulta.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.txtConsulta.Location = new System.Drawing.Point(629, 487);
+            this.txtConsulta.Location = new System.Drawing.Point(629, 12);
             this.txtConsulta.Name = "txtConsulta";
             this.txtConsulta.Size = new System.Drawing.Size(200, 23);
             this.txtConsulta.TabIndex = 1;
@@ -60,7 +61,7 @@
             this.btnExecutar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnExecutar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExecutar.ForeColor = System.Drawing.Color.White;
-            this.btnExecutar.Location = new System.Drawing.Point(629, 516);
+            this.btnExecutar.Location = new System.Drawing.Point(629, 41);
             this.btnExecutar.Name = "btnExecutar";
             this.btnExecutar.Size = new System.Drawing.Size(200, 44);
             this.btnExecutar.TabIndex = 2;
@@ -68,11 +69,29 @@
             this.btnExecutar.UseVisualStyleBackColor = false;
             this.btnExecutar.Click += new System.EventHandler(this.btnExecutar_Click);
             // 
+            // btnWhere
+            // 
+            this.btnWhere.BackColor = System.Drawing.Color.Navy;
+            this.btnWhere.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnWhere.FlatAppearance.BorderSize = 0;
+            this.btnWhere.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnWhere.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnWhere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWhere.ForeColor = System.Drawing.Color.White;
+            this.btnWhere.Location = new System.Drawing.Point(629, 91);
+            this.btnWhere.Name = "btnWhere";
+            this.btnWhere.Size = new System.Drawing.Size(200, 44);
+            this.btnWhere.TabIndex = 3;
+            this.btnWhere.Text = "Where";
+            this.btnWhere.UseVisualStyleBackColor = false;
+            this.btnWhere.Click += new System.EventHandler(this.btnWhere_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 596);
+            this.Controls.Add(this.btnWhere);
             this.Controls.Add(this.btnExecutar);
             this.Controls.Add(this.txtConsulta);
             this.Controls.Add(this.lista);
@@ -92,6 +111,7 @@
         private System.Windows.Forms.ListBox lista;
         private System.Windows.Forms.TextBox txtConsulta;
         private System.Windows.Forms.Button btnExecutar;
+        private System.Windows.Forms.Button btnWhere;
     }
 }
 
