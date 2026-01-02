@@ -29,6 +29,10 @@ namespace ControleDeErros
                 //throw new Exception(ex.Message);
                 lbResultado.Text = ex.Message;
             }
+            finally
+            {
+                //MessageBox.Show("Operação finalizada");
+            }
         }
     }
 }
