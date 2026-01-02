@@ -24,6 +24,7 @@ namespace LINQ
             InitializeComponent();
             listaNomes = PopularNomes();
             listaNumeros = PopularNumeros();
+            listaProdutos = PopularProdutos();
         }
 
         #endregion
@@ -83,7 +84,8 @@ namespace LINQ
         {
             return new List<int>
             {
-                1,2,3,4,5,6,7,8,9,0
+                1,2,3,4,5,6,7,8,9,0,
+                20,30,40,50,60,70,80,90
             };
         }
 
@@ -108,6 +110,40 @@ namespace LINQ
 
         #endregion
 
+        #region Lista de produtos
+
+        private Dictionary<string, double> PopularProdutos()
+        {
+            return new Dictionary<string, double>
+            {
+                { "Arroz", 1.99 },
+                { "Feijão", 2.50 },
+                { "Acucar", 5.99 }
+            };
+        }
+
+        private IEnumerable<KeyValuePair<string, double>> ObterProdutos(string txt)
+        {
+            IEnumerable<KeyValuePair<string, double>> res = from p in listaProdutos
+                                                          where p.Key.ToLower().Contains(txt.ToLower())
+                                                          select p;
+
+            return res;
+        }
+
+        private void RetornarProdutos()
+        {
+            string txt = txtConsulta.Text;
+            IEnumerable<KeyValuePair<string, double>> res = ObterProdutos(txt);
+
+            foreach (var item in res)
+            {
+                lista.Items.Add($"[{item.Key}] - R$ {item.Value}");
+            }
+        }
+
+        #endregion
+
         private void btnWhere_Click(object sender, EventArgs e)
         {
             try
@@ -126,7 +162,7 @@ namespace LINQ
         private void ClausulaWhere()
         {
             string txt = txtConsulta.Text;
-            var res = from nome in PopularNomes()
+            var res = from nome in listaNomes
                       where nome.ToLower().Contains(txt)
                       select nome;
 
@@ -134,5 +170,66 @@ namespace LINQ
         }
 
         #endregion
+
+        private void btnOrderBy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                OrderBy();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #region Order By
+
+        private void OrderBy()
+        {
+            string txt = txtConsulta.Text;
+            TipoConsulta(txt);
+        }
+
+        private void TipoConsulta(string txt)
+        {
+            if (int.TryParse(txt, out int numeros))
+            {
+                var res = from n in listaNumeros
+                          orderby n descending
+                          where n <= int.Parse(txt)
+                          select n;
+
+                foreach (var item in res)
+                {
+                    lista.Items.Add(item);
+                }
+            }
+            else
+            {
+                var res = from nome in listaNomes
+                          orderby nome descending
+                          where nome.Contains(txt)
+                          select nome;
+
+                lista.Items.AddRange(res.ToArray());
+            }
+        }
+
+        #endregion
+
+        private void btnObterProdutos_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                RetornarProdutos();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

@@ -32,6 +32,8 @@
             this.txtConsulta = new System.Windows.Forms.TextBox();
             this.btnExecutar = new System.Windows.Forms.Button();
             this.btnWhere = new System.Windows.Forms.Button();
+            this.btnOrderBy = new System.Windows.Forms.Button();
+            this.btnObterProdutos = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -86,11 +88,47 @@
             this.btnWhere.UseVisualStyleBackColor = false;
             this.btnWhere.Click += new System.EventHandler(this.btnWhere_Click);
             // 
+            // btnOrderBy
+            // 
+            this.btnOrderBy.BackColor = System.Drawing.Color.Navy;
+            this.btnOrderBy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOrderBy.FlatAppearance.BorderSize = 0;
+            this.btnOrderBy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnOrderBy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnOrderBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOrderBy.ForeColor = System.Drawing.Color.White;
+            this.btnOrderBy.Location = new System.Drawing.Point(629, 141);
+            this.btnOrderBy.Name = "btnOrderBy";
+            this.btnOrderBy.Size = new System.Drawing.Size(200, 44);
+            this.btnOrderBy.TabIndex = 4;
+            this.btnOrderBy.Text = "OrderBy";
+            this.btnOrderBy.UseVisualStyleBackColor = false;
+            this.btnOrderBy.Click += new System.EventHandler(this.btnOrderBy_Click);
+            // 
+            // btnObterProdutos
+            // 
+            this.btnObterProdutos.BackColor = System.Drawing.Color.Navy;
+            this.btnObterProdutos.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnObterProdutos.FlatAppearance.BorderSize = 0;
+            this.btnObterProdutos.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnObterProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnObterProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnObterProdutos.ForeColor = System.Drawing.Color.White;
+            this.btnObterProdutos.Location = new System.Drawing.Point(629, 191);
+            this.btnObterProdutos.Name = "btnObterProdutos";
+            this.btnObterProdutos.Size = new System.Drawing.Size(200, 44);
+            this.btnObterProdutos.TabIndex = 5;
+            this.btnObterProdutos.Text = "Obter Produtos";
+            this.btnObterProdutos.UseVisualStyleBackColor = false;
+            this.btnObterProdutos.Click += new System.EventHandler(this.btnObterProdutos_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 596);
+            this.Controls.Add(this.btnObterProdutos);
+            this.Controls.Add(this.btnOrderBy);
             this.Controls.Add(this.btnWhere);
             this.Controls.Add(this.btnExecutar);
             this.Controls.Add(this.txtConsulta);
@@ -112,6 +150,8 @@
         private System.Windows.Forms.TextBox txtConsulta;
         private System.Windows.Forms.Button btnExecutar;
         private System.Windows.Forms.Button btnWhere;
+        private System.Windows.Forms.Button btnOrderBy;
+        private System.Windows.Forms.Button btnObterProdutos;
     }
 }
 
