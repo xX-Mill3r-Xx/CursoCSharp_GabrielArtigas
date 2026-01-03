@@ -25,6 +25,14 @@ namespace LINQ
             listaNomes = PopularNomes();
             listaNumeros = PopularNumeros();
             listaProdutos = PopularProdutos();
+
+            listaEstados = new Dictionary<string, string>
+            {
+                { "Minas", "Brasil" },
+                { "São Paulo", "Brasil" },
+                { "Nova York", "Estados Unidos" },
+                { "Paris", "França" }
+            };
         }
 
         #endregion
@@ -231,5 +239,38 @@ namespace LINQ
                 MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnGroupBy_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                GroupBy();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #region GroupBy
+
+        private void GroupBy()
+        {
+            string txt = txtConsulta.Text;
+            var res = from estado in listaEstados
+                      group estado by estado.Value;
+
+            foreach (var item in res)
+            {
+                lista.Items.Add($"🟢 {item.Key}");
+                foreach (var estado in item)
+                {
+                    lista.Items.Add($" Estado ---> {estado.Key}");
+                }
+            }     
+        }
+
+        #endregion
     }
 }

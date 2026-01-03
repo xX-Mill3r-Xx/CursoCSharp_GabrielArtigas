@@ -34,6 +34,7 @@
             this.btnWhere = new System.Windows.Forms.Button();
             this.btnOrderBy = new System.Windows.Forms.Button();
             this.btnObterProdutos = new System.Windows.Forms.Button();
+            this.btnGroupBy = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -122,11 +123,29 @@
             this.btnObterProdutos.UseVisualStyleBackColor = false;
             this.btnObterProdutos.Click += new System.EventHandler(this.btnObterProdutos_Click);
             // 
+            // btnGroupBy
+            // 
+            this.btnGroupBy.BackColor = System.Drawing.Color.Navy;
+            this.btnGroupBy.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnGroupBy.FlatAppearance.BorderSize = 0;
+            this.btnGroupBy.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnGroupBy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnGroupBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGroupBy.ForeColor = System.Drawing.Color.White;
+            this.btnGroupBy.Location = new System.Drawing.Point(629, 241);
+            this.btnGroupBy.Name = "btnGroupBy";
+            this.btnGroupBy.Size = new System.Drawing.Size(200, 44);
+            this.btnGroupBy.TabIndex = 6;
+            this.btnGroupBy.Text = "Goup By";
+            this.btnGroupBy.UseVisualStyleBackColor = false;
+            this.btnGroupBy.Click += new System.EventHandler(this.btnGroupBy_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 596);
+            this.Controls.Add(this.btnGroupBy);
             this.Controls.Add(this.btnObterProdutos);
             this.Controls.Add(this.btnOrderBy);
             this.Controls.Add(this.btnWhere);
@@ -152,6 +171,7 @@
         private System.Windows.Forms.Button btnWhere;
         private System.Windows.Forms.Button btnOrderBy;
         private System.Windows.Forms.Button btnObterProdutos;
+        private System.Windows.Forms.Button btnGroupBy;
     }
 }
 
