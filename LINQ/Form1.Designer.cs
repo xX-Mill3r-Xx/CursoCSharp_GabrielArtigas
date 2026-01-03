@@ -35,10 +35,12 @@
             this.btnOrderBy = new System.Windows.Forms.Button();
             this.btnObterProdutos = new System.Windows.Forms.Button();
             this.btnGroupBy = new System.Windows.Forms.Button();
+            this.btnAgregacao = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
             // 
+            this.lista.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lista.Font = new System.Drawing.Font("Segoe UI", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lista.FormattingEnabled = true;
             this.lista.ItemHeight = 32;
@@ -140,11 +142,29 @@
             this.btnGroupBy.UseVisualStyleBackColor = false;
             this.btnGroupBy.Click += new System.EventHandler(this.btnGroupBy_Click);
             // 
+            // btnAgregacao
+            // 
+            this.btnAgregacao.BackColor = System.Drawing.Color.Navy;
+            this.btnAgregacao.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnAgregacao.FlatAppearance.BorderSize = 0;
+            this.btnAgregacao.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnAgregacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnAgregacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAgregacao.ForeColor = System.Drawing.Color.White;
+            this.btnAgregacao.Location = new System.Drawing.Point(629, 291);
+            this.btnAgregacao.Name = "btnAgregacao";
+            this.btnAgregacao.Size = new System.Drawing.Size(200, 44);
+            this.btnAgregacao.TabIndex = 7;
+            this.btnAgregacao.Text = "Op de Agregação";
+            this.btnAgregacao.UseVisualStyleBackColor = false;
+            this.btnAgregacao.Click += new System.EventHandler(this.btnAgregacao_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 596);
+            this.Controls.Add(this.btnAgregacao);
             this.Controls.Add(this.btnGroupBy);
             this.Controls.Add(this.btnObterProdutos);
             this.Controls.Add(this.btnOrderBy);
@@ -172,6 +192,7 @@
         private System.Windows.Forms.Button btnOrderBy;
         private System.Windows.Forms.Button btnObterProdutos;
         private System.Windows.Forms.Button btnGroupBy;
+        private System.Windows.Forms.Button btnAgregacao;
     }
 }
 

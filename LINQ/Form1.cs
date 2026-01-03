@@ -133,8 +133,8 @@ namespace LINQ
         private IEnumerable<KeyValuePair<string, double>> ObterProdutos(string txt)
         {
             IEnumerable<KeyValuePair<string, double>> res = from p in listaProdutos
-                                                          where p.Key.ToLower().Contains(txt.ToLower())
-                                                          select p;
+                                                            where p.Key.ToLower().Contains(txt.ToLower())
+                                                            select p;
 
             return res;
         }
@@ -268,7 +268,77 @@ namespace LINQ
                 {
                     lista.Items.Add($" Estado ---> {estado.Key}");
                 }
-            }     
+            }
+        }
+
+        #endregion
+
+        private void btnAgregacao_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                //OpCount();
+                //OpAVG();
+                //OpSum();
+                //OpMin();
+                OpMax();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #region Op de Agregação
+
+        private void OpCount()
+        {
+            string txt = txtConsulta.Text.Trim();
+
+            int cont1 = listaNomes.Count();
+            int cont2 = (from nomes in listaNomes where nomes.StartsWith(txt) select nomes).Count();
+
+            lista.Items.Add($"{cont1} Nomes");
+            lista.Items.Add($"{cont2} Nomes começados com a letra {txt}");
+        }
+
+        private void OpAVG()
+        {
+            double media1 = listaNumeros.Average();
+            lista.Items.Add($"{media1:N2} Média dos valores na lista numeros");
+
+            var consulta = from numeros in listaNumeros
+                           where numeros < 10
+                           select numeros;
+
+            double media2 = consulta.Average();
+            lista.Items.Add($"{media2:N2} Média dos valores menores que 10");
+        }
+
+        private void OpSum()
+        {
+            int sum = listaNumeros.Sum((numeros) => numeros);
+            lista.Items.Add($"Soma dos numeros: {sum}");
+
+            var res = from num in listaNumeros
+                      where num < 10
+                      select num;
+            int soma = res.Sum();
+
+            lista.Items.Add($"Soma dos numeros menores que 10: {soma}");
+        }
+
+        private void OpMin()
+        {
+            int minimo = listaNumeros.Min();
+            lista.Items.Add($"Menor numero é: {minimo}");
+        }
+
+        private void OpMax()
+        {
+            int maximo = listaNumeros.Max();
+            lista.Items.Add($"Maior numero é: {maximo}");
         }
 
         #endregion
