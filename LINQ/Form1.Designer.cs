@@ -37,6 +37,7 @@
             this.btnGroupBy = new System.Windows.Forms.Button();
             this.btnAgregacao = new System.Windows.Forms.Button();
             this.btnOpElemento = new System.Windows.Forms.Button();
+            this.btnLinqLambda = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -47,7 +48,7 @@
             this.lista.ItemHeight = 32;
             this.lista.Location = new System.Drawing.Point(12, 12);
             this.lista.Name = "lista";
-            this.lista.Size = new System.Drawing.Size(611, 548);
+            this.lista.Size = new System.Drawing.Size(611, 452);
             this.lista.TabIndex = 0;
             // 
             // txtConsulta
@@ -67,7 +68,7 @@
             this.btnExecutar.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnExecutar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnExecutar.ForeColor = System.Drawing.Color.White;
-            this.btnExecutar.Location = new System.Drawing.Point(629, 41);
+            this.btnExecutar.Location = new System.Drawing.Point(629, 70);
             this.btnExecutar.Name = "btnExecutar";
             this.btnExecutar.Size = new System.Drawing.Size(200, 44);
             this.btnExecutar.TabIndex = 2;
@@ -84,7 +85,7 @@
             this.btnWhere.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnWhere.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnWhere.ForeColor = System.Drawing.Color.White;
-            this.btnWhere.Location = new System.Drawing.Point(629, 91);
+            this.btnWhere.Location = new System.Drawing.Point(629, 120);
             this.btnWhere.Name = "btnWhere";
             this.btnWhere.Size = new System.Drawing.Size(200, 44);
             this.btnWhere.TabIndex = 3;
@@ -101,7 +102,7 @@
             this.btnOrderBy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnOrderBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOrderBy.ForeColor = System.Drawing.Color.White;
-            this.btnOrderBy.Location = new System.Drawing.Point(629, 141);
+            this.btnOrderBy.Location = new System.Drawing.Point(629, 170);
             this.btnOrderBy.Name = "btnOrderBy";
             this.btnOrderBy.Size = new System.Drawing.Size(200, 44);
             this.btnOrderBy.TabIndex = 4;
@@ -118,7 +119,7 @@
             this.btnObterProdutos.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnObterProdutos.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnObterProdutos.ForeColor = System.Drawing.Color.White;
-            this.btnObterProdutos.Location = new System.Drawing.Point(629, 191);
+            this.btnObterProdutos.Location = new System.Drawing.Point(629, 220);
             this.btnObterProdutos.Name = "btnObterProdutos";
             this.btnObterProdutos.Size = new System.Drawing.Size(200, 44);
             this.btnObterProdutos.TabIndex = 5;
@@ -135,7 +136,7 @@
             this.btnGroupBy.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnGroupBy.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnGroupBy.ForeColor = System.Drawing.Color.White;
-            this.btnGroupBy.Location = new System.Drawing.Point(629, 241);
+            this.btnGroupBy.Location = new System.Drawing.Point(629, 270);
             this.btnGroupBy.Name = "btnGroupBy";
             this.btnGroupBy.Size = new System.Drawing.Size(200, 44);
             this.btnGroupBy.TabIndex = 6;
@@ -152,7 +153,7 @@
             this.btnAgregacao.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnAgregacao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAgregacao.ForeColor = System.Drawing.Color.White;
-            this.btnAgregacao.Location = new System.Drawing.Point(629, 291);
+            this.btnAgregacao.Location = new System.Drawing.Point(629, 320);
             this.btnAgregacao.Name = "btnAgregacao";
             this.btnAgregacao.Size = new System.Drawing.Size(200, 44);
             this.btnAgregacao.TabIndex = 7;
@@ -169,7 +170,7 @@
             this.btnOpElemento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.btnOpElemento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnOpElemento.ForeColor = System.Drawing.Color.White;
-            this.btnOpElemento.Location = new System.Drawing.Point(629, 341);
+            this.btnOpElemento.Location = new System.Drawing.Point(629, 370);
             this.btnOpElemento.Name = "btnOpElemento";
             this.btnOpElemento.Size = new System.Drawing.Size(200, 44);
             this.btnOpElemento.TabIndex = 8;
@@ -177,11 +178,29 @@
             this.btnOpElemento.UseVisualStyleBackColor = false;
             this.btnOpElemento.Click += new System.EventHandler(this.btnOpElemento_Click);
             // 
+            // btnLinqLambda
+            // 
+            this.btnLinqLambda.BackColor = System.Drawing.Color.Navy;
+            this.btnLinqLambda.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnLinqLambda.FlatAppearance.BorderSize = 0;
+            this.btnLinqLambda.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnLinqLambda.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnLinqLambda.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLinqLambda.ForeColor = System.Drawing.Color.White;
+            this.btnLinqLambda.Location = new System.Drawing.Point(629, 420);
+            this.btnLinqLambda.Name = "btnLinqLambda";
+            this.btnLinqLambda.Size = new System.Drawing.Size(200, 44);
+            this.btnLinqLambda.TabIndex = 9;
+            this.btnLinqLambda.Text = "LINQ - Lambda";
+            this.btnLinqLambda.UseVisualStyleBackColor = false;
+            this.btnLinqLambda.Click += new System.EventHandler(this.btnLinqLambda_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 596);
+            this.ClientSize = new System.Drawing.Size(841, 481);
+            this.Controls.Add(this.btnLinqLambda);
             this.Controls.Add(this.btnOpElemento);
             this.Controls.Add(this.btnAgregacao);
             this.Controls.Add(this.btnGroupBy);
@@ -213,6 +232,7 @@
         private System.Windows.Forms.Button btnGroupBy;
         private System.Windows.Forms.Button btnAgregacao;
         private System.Windows.Forms.Button btnOpElemento;
+        private System.Windows.Forms.Button btnLinqLambda;
     }
 }
 

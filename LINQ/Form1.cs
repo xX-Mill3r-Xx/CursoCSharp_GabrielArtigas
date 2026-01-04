@@ -376,5 +376,53 @@ namespace LINQ
         }
 
         #endregion
+
+        private void btnLinqLambda_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                LinqLambda();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #region LINQ - Lambda
+
+        private void LinqLambda()
+        {
+            lista.Items.Add("### Usando uma consulta normal ###");
+            var consulta = from nome in listaNomes select nome; // metodo comum
+            lista.Items.AddRange(consulta.ToArray());
+
+            lista.Items.Add("### Usando o método lambda ###");
+            var select = listaNomes.Select(x => x); // metodo lambda normal
+            lista.Items.AddRange(select.ToArray());
+
+            lista.Items.Add("### Usando o operador where ###");
+            string comecaCom = txtConsulta.Text;
+            var where = listaNomes.Where(x => x.StartsWith(comecaCom)); 
+            lista.Items.AddRange(where.ToArray());
+
+            lista.Items.Add("### Usando o order by ###");
+            var orderBy = listaNomes.OrderBy(x => x);
+            lista.Items.AddRange(orderBy.ToArray());
+
+            lista.Items.Add("### Usando o group by ###");
+            var groupBy = listaEstados.GroupBy(x => x.Key);
+            foreach ( var grupo in groupBy)
+            {
+                lista.Items.Add($"{grupo.Key}");
+                foreach (var item in grupo)
+                {
+                    lista.Items.Add($"   {item.Value}");
+                }
+            }
+        }
+
+        #endregion
     }
 }
