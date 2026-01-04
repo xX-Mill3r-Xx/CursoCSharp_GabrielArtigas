@@ -135,6 +135,7 @@
             this.btnConectar.TabIndex = 6;
             this.btnConectar.Text = "Conectar";
             this.btnConectar.UseVisualStyleBackColor = false;
+            this.btnConectar.Click += new System.EventHandler(this.btnConectar_Click);
             // 
             // btnCriarTabela
             // 
