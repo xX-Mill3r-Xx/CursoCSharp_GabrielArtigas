@@ -36,6 +36,7 @@
             this.btnObterProdutos = new System.Windows.Forms.Button();
             this.btnGroupBy = new System.Windows.Forms.Button();
             this.btnAgregacao = new System.Windows.Forms.Button();
+            this.btnOpElemento = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lista
@@ -159,11 +160,29 @@
             this.btnAgregacao.UseVisualStyleBackColor = false;
             this.btnAgregacao.Click += new System.EventHandler(this.btnAgregacao_Click);
             // 
+            // btnOpElemento
+            // 
+            this.btnOpElemento.BackColor = System.Drawing.Color.Navy;
+            this.btnOpElemento.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnOpElemento.FlatAppearance.BorderSize = 0;
+            this.btnOpElemento.FlatAppearance.MouseDownBackColor = System.Drawing.Color.Blue;
+            this.btnOpElemento.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.btnOpElemento.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnOpElemento.ForeColor = System.Drawing.Color.White;
+            this.btnOpElemento.Location = new System.Drawing.Point(629, 341);
+            this.btnOpElemento.Name = "btnOpElemento";
+            this.btnOpElemento.Size = new System.Drawing.Size(200, 44);
+            this.btnOpElemento.TabIndex = 8;
+            this.btnOpElemento.Text = "Op de Elemento";
+            this.btnOpElemento.UseVisualStyleBackColor = false;
+            this.btnOpElemento.Click += new System.EventHandler(this.btnOpElemento_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(841, 596);
+            this.Controls.Add(this.btnOpElemento);
             this.Controls.Add(this.btnAgregacao);
             this.Controls.Add(this.btnGroupBy);
             this.Controls.Add(this.btnObterProdutos);
@@ -193,6 +212,7 @@
         private System.Windows.Forms.Button btnObterProdutos;
         private System.Windows.Forms.Button btnGroupBy;
         private System.Windows.Forms.Button btnAgregacao;
+        private System.Windows.Forms.Button btnOpElemento;
     }
 }
 

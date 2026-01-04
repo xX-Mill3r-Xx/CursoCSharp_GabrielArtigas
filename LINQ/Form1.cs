@@ -342,5 +342,39 @@ namespace LINQ
         }
 
         #endregion
+
+        private void btnOpElemento_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                lista.Items.Clear();
+                OpElemento();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        #region Op de Elemento
+
+        private void OpElemento()
+        {
+            string posicao = txtConsulta.Text;
+
+            //tambem aplicados a consultas
+
+            int primeiro = listaNumeros.FirstOrDefault();
+            lista.Items.Add(primeiro);
+
+            int elemento = listaNumeros.ElementAt(int.Parse(posicao));
+            lista.Items.Add(elemento);
+
+            var consulta = from num in listaNumeros where num > int.Parse(posicao) select num;
+            int numero = consulta.FirstOrDefault();
+            lista.Items.Add(numero);
+        }
+
+        #endregion
     }
 }
