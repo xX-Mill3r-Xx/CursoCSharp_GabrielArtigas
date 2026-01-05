@@ -43,7 +43,11 @@
             this.btnProcurar = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
+            this.gbConexao = new System.Windows.Forms.GroupBox();
+            this.rbSQLServerCE = new System.Windows.Forms.RadioButton();
+            this.rbSQLite = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
+            this.gbConexao.SuspendLayout();
             this.SuspendLayout();
             // 
             // lbResultado
@@ -217,11 +221,46 @@
             this.btnEditar.Text = "Editar";
             this.btnEditar.UseVisualStyleBackColor = false;
             // 
+            // gbConexao
+            // 
+            this.gbConexao.Controls.Add(this.rbSQLite);
+            this.gbConexao.Controls.Add(this.rbSQLServerCE);
+            this.gbConexao.Location = new System.Drawing.Point(623, 61);
+            this.gbConexao.Name = "gbConexao";
+            this.gbConexao.Size = new System.Drawing.Size(140, 92);
+            this.gbConexao.TabIndex = 12;
+            this.gbConexao.TabStop = false;
+            this.gbConexao.Text = "Base Dados";
+            // 
+            // rbSQLServerCE
+            // 
+            this.rbSQLServerCE.AutoSize = true;
+            this.rbSQLServerCE.Checked = true;
+            this.rbSQLServerCE.Location = new System.Drawing.Point(7, 23);
+            this.rbSQLServerCE.Name = "rbSQLServerCE";
+            this.rbSQLServerCE.Size = new System.Drawing.Size(98, 19);
+            this.rbSQLServerCE.TabIndex = 0;
+            this.rbSQLServerCE.TabStop = true;
+            this.rbSQLServerCE.Text = "SQL Server CE";
+            this.rbSQLServerCE.UseVisualStyleBackColor = true;
+            // 
+            // rbSQLite
+            // 
+            this.rbSQLite.AutoSize = true;
+            this.rbSQLite.Location = new System.Drawing.Point(7, 47);
+            this.rbSQLite.Name = "rbSQLite";
+            this.rbSQLite.Size = new System.Drawing.Size(59, 19);
+            this.rbSQLite.TabIndex = 1;
+            this.rbSQLite.TabStop = true;
+            this.rbSQLite.Text = "SQLite";
+            this.rbSQLite.UseVisualStyleBackColor = true;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(775, 419);
+            this.Controls.Add(this.gbConexao);
             this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnProcurar);
@@ -241,6 +280,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Base de Dados";
             ((System.ComponentModel.ISupportInitialize)(this.lista)).EndInit();
+            this.gbConexao.ResumeLayout(false);
+            this.gbConexao.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -263,6 +304,9 @@
         private System.Windows.Forms.Button btnProcurar;
         private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.GroupBox gbConexao;
+        private System.Windows.Forms.RadioButton rbSQLite;
+        private System.Windows.Forms.RadioButton rbSQLServerCE;
     }
 }
 

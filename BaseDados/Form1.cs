@@ -1,4 +1,5 @@
-﻿using BaseDados.SQLServerCEConection;
+﻿using BaseDados.SQLiteConnection;
+using BaseDados.SQLServerCEConection;
 using System;
 using System.Windows.Forms;
 
@@ -13,8 +14,18 @@ namespace BaseDados
 
         private void btnConectar_Click(object sender, EventArgs e)
         {
-            DataSQLServerCE.CriarConecxao();
-            lbResultado.Text = "base de dados criada!";
+            if (rbSQLServerCE.Checked)
+            {
+                DataSQLServerCE.CriarConecxaoSQLServerCE();
+                lbResultado.Text = "Base de dados SQL Server CE criada!";
+            }
+
+            if (rbSQLite.Checked)
+            {
+                DataSQLiteConnection.CriarConecxaoSQLite();
+                lbResultado.Text = "Base de dados SQLite criada!";
+            }
+            
         }
     }
 }

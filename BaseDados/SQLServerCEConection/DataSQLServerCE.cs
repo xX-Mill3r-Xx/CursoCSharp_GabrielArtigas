@@ -7,7 +7,7 @@ namespace BaseDados.SQLServerCEConection
 {
     public static class DataSQLServerCE
     {
-        public static void CriarConecxao()
+        public static void CriarConecxaoSQLServerCE()
         {
             string baseDados = Application.StartupPath + @"\db\dbSqlServer.sdf";
             string strConnection = $@"DataSource = {baseDados}; Password = '1234'";
