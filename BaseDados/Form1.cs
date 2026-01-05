@@ -31,5 +31,24 @@ namespace BaseDados
                 MessageBox.Show("Não Implementado!");
             }
         }
+
+        private void btnCriarTabela_Click(object sender, EventArgs e)
+        {
+            if (rbSQLServerCE.Checked)
+            {
+                DataSQLServerCE.CriarTabela();
+                lbResultado.Text = "Tabela criada: SQL Server CE";
+            }
+
+            if (rbSQLite.Checked)
+            {
+                MessageBox.Show("Não Implementado!");
+            }
+
+            if (rbMySQL.Checked)
+            {
+                MessageBox.Show("Não Implementado!");
+            }
+        }
     }
 }

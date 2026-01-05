@@ -7,10 +7,22 @@ namespace BaseDados.SQLServerCEConection
 {
     public static class DataSQLServerCE
     {
-        public static void CriarConecxaoSQLServerCE()
+        private static string RetornaBaseDados()
         {
             string baseDados = Application.StartupPath + @"\db\dbSqlServer.sdf";
+            return baseDados;
+        }
+
+        private static string RetornaConexao(string baseDados)
+        {
             string strConnection = $@"DataSource = {baseDados}; Password = '1234'";
+            return strConnection;
+        }
+
+        public static void CriarConecxaoSQLServerCE()
+        {
+            string baseDados = RetornaBaseDados();
+            string strConnection = RetornaConexao(baseDados);
 
             SqlCeEngine db = new SqlCeEngine(strConnection);
 
@@ -19,15 +31,15 @@ namespace BaseDados.SQLServerCEConection
 
             db.Dispose();
 
-            SqlCeConnection conection = new SqlCeConnection(strConnection);
+            SqlCeConnection connection = new SqlCeConnection(strConnection);
 
             try
             {
-                conection.Open();
+                connection.Open();
 
                 MessageBox.Show("Conectado SQL Server CE");
 
-                conection.Close();
+                connection.Close();
             }
             catch (Exception ex)
             {
@@ -35,7 +47,36 @@ namespace BaseDados.SQLServerCEConection
             }
             finally
             {
-                conection.Close();
+                connection.Close();
+            }
+        }
+
+        public static void CriarTabela()
+        {
+            string baseDados = RetornaBaseDados();
+            string strConnection = RetornaConexao(baseDados);
+
+            SqlCeConnection connection = new SqlCeConnection(strConnection);
+
+            try
+            {
+                connection.Open();
+                SqlCeCommand cmd = new SqlCeCommand();
+                cmd.Connection = connection;
+
+                cmd.CommandText = "CREATE TABLE PESSOAS (ID INT NOT NULL PRIMARY KEY, NOME NVARCHAR(50), EMAIL NVARCHAR(50))";
+                cmd.ExecuteNonQuery();
+
+                MessageBox.Show("Tabela criada: SQL Server CE");
+                cmd.Dispose();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+            finally
+            {
+                connection.Close();
             }
         }
     }

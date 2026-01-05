@@ -44,9 +44,9 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnEditar = new System.Windows.Forms.Button();
             this.gbConexao = new System.Windows.Forms.GroupBox();
-            this.rbSQLServerCE = new System.Windows.Forms.RadioButton();
-            this.rbSQLite = new System.Windows.Forms.RadioButton();
             this.rbMySQL = new System.Windows.Forms.RadioButton();
+            this.rbSQLite = new System.Windows.Forms.RadioButton();
+            this.rbSQLServerCE = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
             this.gbConexao.SuspendLayout();
             this.SuspendLayout();
@@ -157,6 +157,7 @@
             this.btnCriarTabela.TabIndex = 7;
             this.btnCriarTabela.Text = "Criar Tabela";
             this.btnCriarTabela.UseVisualStyleBackColor = false;
+            this.btnCriarTabela.Click += new System.EventHandler(this.btnCriarTabela_Click);
             // 
             // btnInserir
             // 
@@ -234,17 +235,15 @@
             this.gbConexao.TabStop = false;
             this.gbConexao.Text = "Base Dados";
             // 
-            // rbSQLServerCE
+            // rbMySQL
             // 
-            this.rbSQLServerCE.AutoSize = true;
-            this.rbSQLServerCE.Checked = true;
-            this.rbSQLServerCE.Location = new System.Drawing.Point(7, 23);
-            this.rbSQLServerCE.Name = "rbSQLServerCE";
-            this.rbSQLServerCE.Size = new System.Drawing.Size(98, 19);
-            this.rbSQLServerCE.TabIndex = 0;
-            this.rbSQLServerCE.TabStop = true;
-            this.rbSQLServerCE.Text = "SQL Server CE";
-            this.rbSQLServerCE.UseVisualStyleBackColor = true;
+            this.rbMySQL.AutoSize = true;
+            this.rbMySQL.Location = new System.Drawing.Point(7, 69);
+            this.rbMySQL.Name = "rbMySQL";
+            this.rbMySQL.Size = new System.Drawing.Size(63, 19);
+            this.rbMySQL.TabIndex = 2;
+            this.rbMySQL.Text = "MySQL";
+            this.rbMySQL.UseVisualStyleBackColor = true;
             // 
             // rbSQLite
             // 
@@ -256,15 +255,17 @@
             this.rbSQLite.Text = "SQLite";
             this.rbSQLite.UseVisualStyleBackColor = true;
             // 
-            // rbMySQL
+            // rbSQLServerCE
             // 
-            this.rbMySQL.AutoSize = true;
-            this.rbMySQL.Location = new System.Drawing.Point(7, 69);
-            this.rbMySQL.Name = "rbMySQL";
-            this.rbMySQL.Size = new System.Drawing.Size(63, 19);
-            this.rbMySQL.TabIndex = 2;
-            this.rbMySQL.Text = "MySQL";
-            this.rbMySQL.UseVisualStyleBackColor = true;
+            this.rbSQLServerCE.AutoSize = true;
+            this.rbSQLServerCE.Checked = true;
+            this.rbSQLServerCE.Location = new System.Drawing.Point(7, 23);
+            this.rbSQLServerCE.Name = "rbSQLServerCE";
+            this.rbSQLServerCE.Size = new System.Drawing.Size(98, 19);
+            this.rbSQLServerCE.TabIndex = 0;
+            this.rbSQLServerCE.TabStop = true;
+            this.rbSQLServerCE.Text = "SQL Server CE";
+            this.rbSQLServerCE.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
