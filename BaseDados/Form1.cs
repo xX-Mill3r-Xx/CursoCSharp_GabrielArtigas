@@ -25,7 +25,11 @@ namespace BaseDados
                 DataSQLiteConnection.CriarConecxaoSQLite();
                 lbResultado.Text = "Base de dados SQLite criada!";
             }
-            
+
+            if (rbMySQL.Checked)
+            {
+                MessageBox.Show("Não Implementado!");
+            }
         }
     }
 }

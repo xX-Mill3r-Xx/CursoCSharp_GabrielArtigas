@@ -46,6 +46,7 @@
             this.gbConexao = new System.Windows.Forms.GroupBox();
             this.rbSQLServerCE = new System.Windows.Forms.RadioButton();
             this.rbSQLite = new System.Windows.Forms.RadioButton();
+            this.rbMySQL = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.lista)).BeginInit();
             this.gbConexao.SuspendLayout();
             this.SuspendLayout();
@@ -223,6 +224,7 @@
             // 
             // gbConexao
             // 
+            this.gbConexao.Controls.Add(this.rbMySQL);
             this.gbConexao.Controls.Add(this.rbSQLite);
             this.gbConexao.Controls.Add(this.rbSQLServerCE);
             this.gbConexao.Location = new System.Drawing.Point(623, 61);
@@ -251,9 +253,18 @@
             this.rbSQLite.Name = "rbSQLite";
             this.rbSQLite.Size = new System.Drawing.Size(59, 19);
             this.rbSQLite.TabIndex = 1;
-            this.rbSQLite.TabStop = true;
             this.rbSQLite.Text = "SQLite";
             this.rbSQLite.UseVisualStyleBackColor = true;
+            // 
+            // rbMySQL
+            // 
+            this.rbMySQL.AutoSize = true;
+            this.rbMySQL.Location = new System.Drawing.Point(7, 69);
+            this.rbMySQL.Name = "rbMySQL";
+            this.rbMySQL.Size = new System.Drawing.Size(63, 19);
+            this.rbMySQL.TabIndex = 2;
+            this.rbMySQL.Text = "MySQL";
+            this.rbMySQL.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
@@ -307,6 +318,7 @@
         private System.Windows.Forms.GroupBox gbConexao;
         private System.Windows.Forms.RadioButton rbSQLite;
         private System.Windows.Forms.RadioButton rbSQLServerCE;
+        private System.Windows.Forms.RadioButton rbMySQL;
     }
 }
 
