@@ -50,5 +50,27 @@ namespace BaseDados
                 MessageBox.Show("Não Implementado!");
             }
         }
+
+        private void btnInserir_Click(object sender, EventArgs e)
+        {
+            if (rbSQLServerCE.Checked)
+            {
+                DataSQLServerCE.InserirRegistros(txtNome.Text, txtEmail.Text);
+                lbResultado.Text = "Registro inserido: SQL Server CE";
+                txtNome.Clear();
+                txtEmail.Clear();
+                txtNome.Focus();
+            }
+        }
+
+        private void btnProcurar_Click(object sender, EventArgs e)
+        {
+            if (rbSQLServerCE.Checked)
+            {
+                lista.Rows.Clear();
+                DataSQLServerCE.ProcurarRegistros(txtNome.Text, lista);
+                lbResultado.Text = "Registro encontrados: SQL Server CE";
+            }
+        }
     }
 }
